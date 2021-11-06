@@ -1,0 +1,54 @@
+.skills{
+    text-align: center;
+    padding: 80px 0;
+}
+.skills .container{
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+.skills .row{
+    display: flex;
+    /* padding: 20px; */
+}
+.skill{
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 2px 2px -1px #333;
+    text-align: center;
+}
+.skill img{
+    height: 50%;
+    object-fit: contain;
+    padding: 16px 16px 8px 16px;
+}
+.skill h6{
+    text-align: center;
+    font-size: 16px;
+}
+.skill:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:682px) {
+    .skill{
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:442px) {
+    .skill{
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        margin: 10px;
+    }
+    .skill h6{
+        font-size: 12px;
+    }
+}

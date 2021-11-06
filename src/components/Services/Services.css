@@ -1,0 +1,42 @@
+.services{
+    padding: 60px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.services .column{
+    min-width: 300px;
+    max-width: 300px;
+    background: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    padding: 30px 20px;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+.services .column:hover{
+    transform: scale(1.05);
+}
+.services .column .services-img{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 100%;
+    margin: auto;
+    background: rgb(245, 175, 35);
+}
+.services .column img{
+    height: 70px;
+}
+.services .column .service-info h3{
+    margin: 20px auto;
+    color: rgb(245, 175, 35);
+    letter-spacing: 3;
+}
+.services .column .service-info .desc{
+    line-height: 28px;
+    letter-spacing: 2;
+}

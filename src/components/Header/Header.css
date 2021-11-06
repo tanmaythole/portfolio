@@ -1,0 +1,108 @@
+.header{
+    padding-top: 80px;
+}
+.container{
+    color: #fff;
+}
+.container-info{
+    width: 80%;
+    height: calc(100vh - 5em);
+    margin: auto;
+}
+.info{
+    float: left;
+    width: 50%;
+    padding-top: calc((100vh - 5em)/2 - 7em);
+    position: relative;
+    z-index: 2;
+}
+.seek{
+    height: 3px;
+    width: 80px;
+    border-radius: 10px;
+    background: rgb(255, 166, 0);
+    margin: 10px auto;
+    
+}
+#main-header .seek{
+    margin: 0;
+}
+.info .name{
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+}
+.info .work{
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+    font-family: 'KoHo', sans-serif;
+}
+.typed{
+    color: rgb(202, 202, 202);
+    font-size: 22px;
+}
+.hire{
+    margin-top: 25px;
+    width: 100px;
+    height: 30px;
+    background: rgb(255, 217, 0);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 0 gray;
+    cursor: pointer;
+}
+.info p a{
+    color: rgb(255, 217, 0);
+}
+.pic{
+    display: none;
+}
+.social-links{
+    padding-top: 30px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-links a{
+    font-size: 23px;
+}
+.social-links a:hover{
+    bottom: 10px;
+    position: relative;
+    transform: scale(1.3);
+    transition: all .5s;
+}
+
+@media screen and (min-width:1020px){
+    .pic{
+        top: 80px;
+        display: block;
+        position: relative;
+    }
+    .container .pic{
+        text-align: right;
+    }
+}
+@media screen and (max-width:1020px){
+    .info{
+        width: 70%;
+    }
+    .container .pic{
+        float: right;
+        top: 25px;
+        position: relative;
+        display: block;
+        width: 30%;
+    }
+    .container .pic .img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.img{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+}
