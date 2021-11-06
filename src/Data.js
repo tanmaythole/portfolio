@@ -151,3 +151,21 @@ export const BlogData = [
         "image":"gfg.png"
     }
 ]
+
+export const TestimonialData = [
+    {
+        "image":"client1.jpg",
+        "message":"Tanmay is an excellent programmer. He managed to finished my application faster than he promised. He is good at communicating with client and very patient. Highly recommend him!",
+        "name":"Soma 17"
+    },
+    {
+        "image":"client2.webp",
+        "message":"Tanmay is very good Man. Also his work is top quality. I am very happy to work with Tanmay. I will hire again for my next work.",
+        "name":"Satyam Sharma"
+    },
+    {
+        "image":"client3.jpeg",
+        "message":"Seriously had a great time working with Tanmay. He understands the issue and provides root cause analysis of the same. Excellent. Keep it up Tanmay.",
+        "name":"Shrinivas Pandurangi"
+    }
+]

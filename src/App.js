@@ -11,6 +11,9 @@ import Services from './components/Services/Services';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Blogs from './components/Blogs/Blogs';
+import Testimonials from './components/Testimonials/Testimonials';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -25,8 +28,11 @@ function App() {
             <Projects />
             <Skills />
             <Blogs />
+            <Testimonials />
+            <Contact />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
