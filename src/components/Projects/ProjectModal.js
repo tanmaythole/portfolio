@@ -8,7 +8,7 @@ const ProjectModal = ({data, setModal}) => {
             <div id="preview" className="modal">
                 <div className="modal-content">
                   <span className="close" onClick={()=>setModal(false)}>&times;</span>
-                  <img id="img" src={`/images/Project-${data.id}.png`} alt={data.title} />
+                  <img id="img" src={`/images/project-${data.id}.png`} alt={data.title} />
                   <div id="details">
                     <h3 id="title">{data.title}</h3>
                     <p id="info">{data.description}</p>
