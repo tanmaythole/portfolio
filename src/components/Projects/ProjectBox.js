@@ -11,7 +11,7 @@ const ProjectBox = ({data}) => {
     return (
         <div>
             <div className="item">
-                <img src={`/images/Project-${data.id}.png`} alt="" />
+                <img src={`/images/project-${data.id}.png`} alt="" />
                 <div className="text">
                     <h3>{data.title}</h3>
                     <p>MySQL project</p>

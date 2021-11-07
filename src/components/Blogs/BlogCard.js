@@ -4,7 +4,7 @@ import './Blogs.css'
 const BlogCard = ({data}) => {
     return (
         <div className="blog" data-aos="zoom-in" data-aos-duration="400">
-            <img src={`images/${data.image}`} alt="" />
+            <img src={`/images/${data.image}`} alt="" />
             <div className="blog-info">
                 <h5 className="blog-title">
                     {data.title}
