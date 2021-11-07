@@ -14,6 +14,7 @@ import Blogs from './components/Blogs/Blogs';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import BackToTopBtn from './components/BackToTopBtn/BackToTopBtn';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+        <BackToTopBtn />
         <Footer />
       </Router>
     </div>
