@@ -8,7 +8,7 @@ import {
     AiFillGithub, 
     AiFillLinkedin
 } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
     return (
@@ -33,12 +33,12 @@ const Header = () => {
                                 loop    
                             />
                         </span></p>
-                        <Link to="#contact"><button class="hire">HIRE ME</button></Link> 
+                        <ScrollLink to="contact" spy={true} smooth={true} offset={-50}><button class="hire">HIRE ME</button></ScrollLink> 
                         <p class="social-links">
-                            <Link to="https://www.facebook.com/tanmaythole45"><AiFillFacebook /></Link> 
-                            <Link to="https://www.instagram.com/tanmay_v_thole"><AiFillInstagram /></Link> 
-                            <Link to="https://github.com/tanmaythole"><AiFillGithub /></Link> 
-                            <Link to="https://www.linkedin.com/in/tanmay-thole-b82978175/"><AiFillLinkedin /></Link> 
+                            <a target="_blank" href="https://www.facebook.com/tanmaythole45"><AiFillFacebook /></a> 
+                            <a target="_blank" href="https://www.instagram.com/tanmay_v_thole"><AiFillInstagram /></a> 
+                            <a target="_blank" href="https://github.com/tanmaythole"><AiFillGithub /></a> 
+                            <a target="_blank" href="https://www.linkedin.com/in/tanmay-thole-b82978175/"><AiFillLinkedin /></a> 
                         </p>
                     </article>
                     <article class="pic">
