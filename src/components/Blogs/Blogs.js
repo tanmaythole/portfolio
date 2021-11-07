@@ -6,11 +6,11 @@ import BlogCard from './BlogCard';
 const Blogs = () => {
     return (
         <div className="blogs" id="blogs">
-            <SectionHeading title="Blogs" tagline="What I Write" />
-            <div class="container" id="blog-container">
+            <SectionHeading key="BlogHeading" title="Blogs" tagline="What I Write" />
+            <div className="container" id="blog-container">
                 <div className="row">
                     {BlogData.map(e => {
-                        return <BlogCard data={e} />
+                        return <BlogCard key={e.url} data={e} />
                     })}
                 </div>
             </div>

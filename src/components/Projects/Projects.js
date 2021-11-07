@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {ProjectData} from '../../Data';
 import './Projects.css'
 import ProjectBox from './ProjectBox';
@@ -8,10 +8,10 @@ const Projects = () => {
     
     return (
         <div className="projects" id="projects">
-            <SectionHeading title="Projects" tagline="What I Created" />
+            <SectionHeading key="projectHeading" title="Projects" tagline="What I Created" />
             <div className="container">
                 {ProjectData.map(e => {
-                    return <ProjectBox data={e} />
+                    return <ProjectBox key={e.id} data={e} />
                 })}
             </div>
         </div>

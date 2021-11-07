@@ -22,40 +22,40 @@ const NavBar = () => {
     return (
         <div>
             <nav className={navbarClass}>
-                <div class="nav-container">
-                    <div class="nav-header">
-                        <div class="logo">
+                <div className="nav-container">
+                    <div className="nav-header">
+                        <div className="logo">
                             <h1>Tanmay Thole</h1>
                         </div>
-                        <button class="bars">
+                        <button className="bars">
                             <HiMenuAlt1 onClick={()=>setSidebar(!sidebar)} />
                         </button>
                     </div>
-                    <div class="nav-menu">
+                    <div className="nav-menu">
                         <ul>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="header">Home</ScrollLink>
                             </li>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="about" spy={true} smooth={true} offset={-120}>About</ScrollLink>
                             </li>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="services" spy={true} smooth={true} offset={-40}>Services</ScrollLink>
                             </li>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="projects" spy={true} smooth={true} offset={-40}>Projects</ScrollLink>
                             </li>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="blogs" spy={true} smooth={true} offset={-40}>Blogs</ScrollLink>
                             </li>
-                            <li class="nav-link">
+                            <li className="nav-link">
                                 <ScrollLink to="contact" spy={true} smooth={true} offset={-40}>Contact</ScrollLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <SideBar sidebar={sidebar} />
+            <SideBar sidebar={sidebar} setSidebar={setSidebar} />
             {sidebar?<BackDrop handleBackDrop={setSidebar} />:""}
         </div>
     )

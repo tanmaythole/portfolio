@@ -169,3 +169,21 @@ export const TestimonialData = [
         "name":"Shrinivas Pandurangi"
     }
 ]
+
+export const ServicesData = [
+    {
+        "title":"Problem Solving",
+        "description":"Want to make any problem look like a easy thing , then you're at right place. I practice on platforms like hackerrank, geeksforgeeks and apart from it I am 3 star coder at codechef.",
+        "image":"service1.png",
+    },
+    {
+        "title":"Full Stack Developement",
+        "description":"If you want website or web application or any complex project, then you're at right place. I am a full stack developer with skillset of PHP, MySQL, Python, etc. Apart from this currently I am into Django.",
+        "image":"service2.png",
+    },
+    {
+        "title":"Web Designer",
+        "description":"Have been into it since I started my engineering. I am a developer as well as designer. Apart from HTML,CSS,JS currently I am into React.",
+        "image":"service3.png",
+    }
+]

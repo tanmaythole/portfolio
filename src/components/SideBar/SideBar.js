@@ -1,29 +1,32 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './SideBar.css'
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const SideBar = (props) => {
+    const onclick = () => {
+        props.setSidebar(!props.sidebar);
+    }
     return (
         <div className={props.sidebar?"sidebar open":"sidebar"}>
-            <div class="sidebar-menu">
+            <div className="sidebar-menu">
                 <ul>
                     <li>
-                        <Link>Home</Link>
+                        <ScrollLink onClick={onclick} to="header">Home</ScrollLink>
                     </li>
                     <li>
-                        <Link>About</Link>
+                        <ScrollLink onClick={onclick} to="about" spy={true} smooth={true} offset={-120}>About</ScrollLink>
                     </li>
                     <li>
-                        <Link>Services</Link>
+                        <ScrollLink onClick={onclick} to="services" spy={true} smooth={true} offset={-40}>Services</ScrollLink>
                     </li>
                     <li>
-                        <Link>Projects</Link>
+                        <ScrollLink onClick={onclick} to="projects" spy={true} smooth={true} offset={-40}>Projects</ScrollLink>
                     </li>
                     <li>
-                        <Link>Blogs</Link>
+                        <ScrollLink onClick={onclick} to="blogs" spy={true} smooth={true} offset={-40}>Blogs</ScrollLink>
                     </li>
                     <li>
-                        <Link>Contact</Link>
+                        <ScrollLink onClick={onclick} to="contact" spy={true} smooth={true} offset={-40}>Contact</ScrollLink>
                     </li>
                 </ul>
             </div>

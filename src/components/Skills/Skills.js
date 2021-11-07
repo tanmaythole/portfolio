@@ -7,13 +7,13 @@ import SectionHeading from '../SectionHeading';
 const Skills = () => {
     return (
         <div className="skills" id="skills">
-            <SectionHeading title="Skills" tagline="What I Know" />
-            <div class="container" id="skills-container" data-aos="fade-up-right">
-                {SkillsData.map(e => {
+            <SectionHeading key="SkillsHeading" title="Skills" tagline="What I Know" />
+            <div className="container" id="skills-container" data-aos="fade-up-right">
+                {SkillsData.map((e, index) => {
                     return (
-                        <div class="row">
+                        <div key={index} className="row">
                             {e.map(data => {
-                                return <SkillBox data={data} />
+                                return <SkillBox key={data.name} data={data} />
                             })}
                         </div>
                     )

@@ -22,11 +22,10 @@ const Testimonials = () => {
                             addArrowClickHandler: true,
                         }
                     }
-                    // 'arrows'
                 ]}>
-                {TestimonialData.map(e => {
+                {TestimonialData.map((e, index) => {
                     return (
-                        <div className="myslide">
+                        <div key={index} className="myslide">
                             <img className="client-img" src={`images/${e.image}`} alt="" />
                             <p className="client-msg">
                                 "{e.message}"
@@ -37,8 +36,6 @@ const Testimonials = () => {
                 })}
                 </Carousel>
 
-                {/* <a className="prev" onclick={plusSlides(-1)}>&#10094;</a>
-                <a className="next" onclick={plusSlides(1)}>&#10095;</a> */}
             </div>
         </div>
     )

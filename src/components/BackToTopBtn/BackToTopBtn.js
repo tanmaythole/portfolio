@@ -27,7 +27,7 @@ const BackToTopBtn = () => {
     
     return (
         showBtn?<div className="back-to-top">
-            <button class="back-to-top-btn" onClick={handleClick}><FaAngleDoubleUp /></button>
+            <button className="back-to-top-btn" onClick={handleClick}><FaAngleDoubleUp /></button>
         </div>:""
     )
 }
