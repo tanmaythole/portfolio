@@ -1,0 +1,113 @@
+.home_container {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+.home_wrapper {
+  height: calc(100vh - 4em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem !important;
+  color: #002d5b !important;
+}
+h3 {
+  line-height: 1.3em !important;
+  font-size: 2.23rem !important;
+  color: var(--text-primary) !important;
+}
+h6 {
+  font-size: 1.3rem !important;
+}
+
+.card .card-title {
+  color: var(--text-primary) !important;
+}
+.card .card-text {
+  color: var(--text-secondary) !important;
+}
+
+.typing_text {
+  font-size: 1.3rem;
+}
+.icon {
+  cursor: pointer;
+}
+.icon:hover {
+  transition: .5s ease-in-out;
+  transform: scale(1.2);
+}
+.custom_button {
+  color: var(--white) !important;
+  background-color: var(--primary-color) !important;
+  padding: 15px 30px !important;
+  line-height: 0.7em !important;
+  margin-top: 2rem;
+}
+.custom_button:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+.section_wrapper {
+  margin: 5rem 0;
+}
+.section_title_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.divider {
+  height: 3px;
+  width: 6rem;
+  border-top: 3px solid var(--primary-color) !important;
+  border-radius: 3px;
+}
+
+.about_section_img_container {
+  width: 100%;
+  padding: 0 50px;
+  height: 90%;
+
+}
+.about_section img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 
+    rgba(47, 124, 247, 0.3) 3px 3px, 
+    rgba(47, 124, 247, 0.2) 6px 6px, 
+    rgba(47, 124, 247, 0.1) 9px 9px, 
+    rgba(47, 124, 247, 0.05) 12px 12px;
+  border-radius: 20px;
+  border: 1px solid
+}
+
+.service_card:hover,
+.project_card:hover {
+  transform: scale(1.02);
+  transition: .3s ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.service_card_icon {
+  background-color: #F8DCDD;
+  height: 64px;
+}
+
+.experience_card .divider {
+  width: 100%;
+  height: 1px !important;
+  border-top:1px solid var(--bg-color) !important;
+}
+
+.blog_card_img {
+  height: 192px;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  .about_section_img_container {
+    display: none;
+  }
+}

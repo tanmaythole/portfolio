@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #4175FC;
+    --secondary-color: #084AF3;
+    --text-primary: #101218;
+    --text-secondary: #494B51;
+    --bg-color: #F3F5F5;
+    --white: #FFFFFF;
+    --ast-global-color-6: #000000;
+    --ast-global-color-7: #4B4F58;
+    --ast-global-color-8: #F6F7F8;
+}
+
+body {
+    color: var(--text-secondary) !important
+}
