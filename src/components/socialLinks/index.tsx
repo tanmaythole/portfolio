@@ -36,11 +36,15 @@ const linksData = [
   },
 ];
 
-const SocialLinks: FC = () => {
+type Props = {
+  color?: string;
+};
+
+const SocialLinks: FC<Props> = ({ color }) => {
   return (
     <span className="d-flex gap-3">
       {linksData.map(({ name, icon, url }) => (
-        <SocialLink key={name} icon={icon} url={url} />
+        <SocialLink key={name} icon={icon} url={url} color={color} />
       ))}
     </span>
   );

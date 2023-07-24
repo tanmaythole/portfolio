@@ -15,5 +15,6 @@
 }
 
 body {
-    color: var(--text-secondary) !important
+    color: var(--text-secondary) !important;
+    background-color: var(--bg-color) !important;
 }

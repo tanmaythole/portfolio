@@ -6,6 +6,8 @@ import Services from "./services";
 import Projects from "./projects";
 import Blogs from "./blogs";
 import Testimonial from "./testimonial";
+import Footer from "@src/components/footer";
+import Contact from "./contact";
 // import Experience from "./experience";
 
 const Main: FC = () => {
@@ -18,6 +20,8 @@ const Main: FC = () => {
       <Projects />
       <Blogs />
       <Testimonial />
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -36,7 +36,7 @@ const Blogs: FC = () => {
     <SectionWrapper>
       <SectionTitle title="Blogs" subtitile="What I write" />
       <Container>
-        <Row>
+        <Row className="row-gap-3">
           {blogDetails.map((blog) => (
             <Col key={blog.title} md={4}>
               <BlogCard {...blog} />

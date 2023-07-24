@@ -1,7 +1,11 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, HTMLAttributes, PropsWithChildren } from "react";
 
-const SectionWrapper: FC<PropsWithChildren> = ({ children }) => (
-  <div className="section_wrapper">{children}</div>
+type Props = PropsWithChildren & HTMLAttributes<HTMLDivElement>;
+
+const SectionWrapper: FC<Props> = ({ children, className, ...props }) => (
+  <div className={`section_wrapper ${className}`} {...props}>
+    {children}
+  </div>
 );
 
 export default SectionWrapper;
