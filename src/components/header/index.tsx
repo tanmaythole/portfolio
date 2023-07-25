@@ -1,11 +1,15 @@
 import { FC } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
+
+import logo from "@src/assets/images/logo.png";
 
 const Header: FC = () => {
   return (
     <Navbar expand="lg" className="bg-body-transparent">
       <Container>
-        <Navbar.Brand href="#home">Tanmay</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <Image src={logo} height={48} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
