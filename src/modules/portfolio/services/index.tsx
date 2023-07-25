@@ -30,21 +30,19 @@ const serviceDetails = [
   },
 ];
 
-const Services: FC = () => {
-  return (
-    <SectionWrapper>
-      <SectionTitle title="Services" subtitile="What I do" />
-      <Container>
-        <Row className="row-gap-3">
-          {serviceDetails.map((item) => (
-            <Col md={4} key={item.title}>
-              <ServiceCard {...item} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </SectionWrapper>
-  );
-};
+const Services: FC = () => (
+  <SectionWrapper id="services">
+    <SectionTitle title="Services" subtitile="What I do" />
+    <Container>
+      <Row className="row-gap-3">
+        {serviceDetails.map((item) => (
+          <Col md={4} key={item.title}>
+            <ServiceCard {...item} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  </SectionWrapper>
+);
 
 export default Services;

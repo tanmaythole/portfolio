@@ -73,21 +73,19 @@ const projectDetails = [
   },
 ];
 
-const Projects: FC = () => {
-  return (
-    <SectionWrapper>
-      <SectionTitle title="Projects" subtitile="What I created" />
-      <Container>
-        <Row className="row-gap-3">
-          {projectDetails.map((item) => (
-            <Col key={item.name} className="d-flex align-item-stretch" md={4}>
-              <ProjectCard {...item} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </SectionWrapper>
-  );
-};
+const Projects: FC = () => (
+  <SectionWrapper id="projects">
+    <SectionTitle title="Projects" subtitile="What I created" />
+    <Container>
+      <Row className="row-gap-3">
+        {projectDetails.map((item) => (
+          <Col key={item.name} className="d-flex align-item-stretch" md={4}>
+            <ProjectCard {...item} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  </SectionWrapper>
+);
 
 export default Projects;

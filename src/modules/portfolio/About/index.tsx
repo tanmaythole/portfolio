@@ -8,7 +8,7 @@ import SectionWrapper from "@src/components/sections/sectionWrapper";
 import aboutImg from "@src/assets/images/about.jpg";
 
 const About: FC = () => (
-  <SectionWrapper className="bg-light">
+  <SectionWrapper className="bg-light" id="about">
     <SectionTitle title="About Me" subtitile="Who I am" />
     <Container className="about_section">
       <Row className="justify-content-between">

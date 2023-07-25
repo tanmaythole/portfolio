@@ -30,24 +30,19 @@ const testimonialData = [
   },
 ];
 
-const Testimonial: FC = () => {
-  return (
-    <SectionWrapper>
-      <SectionTitle
-        title="Testimonial"
-        subtitile="What client thinks about me"
-      />
-      <Container>
-        <Carousel slide data-bs-theme="dark">
-          {testimonialData.map((testimonial) => (
-            <Carousel.Item key={testimonial.name}>
-              <TestimonialItem {...testimonial} />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </Container>
-    </SectionWrapper>
-  );
-};
+const Testimonial: FC = () => (
+  <SectionWrapper id="testimonial">
+    <SectionTitle title="Testimonial" subtitile="What client thinks about me" />
+    <Container>
+      <Carousel slide data-bs-theme="dark">
+        {testimonialData.map((testimonial) => (
+          <Carousel.Item key={testimonial.name}>
+            <TestimonialItem {...testimonial} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Container>
+  </SectionWrapper>
+);
 
 export default Testimonial;

@@ -31,21 +31,19 @@ const blogDetails = [
   },
 ];
 
-const Blogs: FC = () => {
-  return (
-    <SectionWrapper>
-      <SectionTitle title="Blogs" subtitile="What I write" />
-      <Container>
-        <Row className="row-gap-3">
-          {blogDetails.map((blog) => (
-            <Col key={blog.title} md={4}>
-              <BlogCard {...blog} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </SectionWrapper>
-  );
-};
+const Blogs: FC = () => (
+  <SectionWrapper id="blogs">
+    <SectionTitle title="Blogs" subtitile="What I write" />
+    <Container>
+      <Row className="row-gap-3">
+        {blogDetails.map((blog) => (
+          <Col key={blog.title} md={4}>
+            <BlogCard {...blog} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  </SectionWrapper>
+);
 
 export default Blogs;
