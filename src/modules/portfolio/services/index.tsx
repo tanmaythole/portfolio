@@ -31,7 +31,7 @@ const serviceDetails = [
 ];
 
 const Services: FC = () => (
-  <SectionWrapper id="services">
+  <SectionWrapper id="services" className="services_container">
     <SectionTitle title="Services" subtitile="What I do" />
     <Container>
       <Row className="row-gap-3">

@@ -32,7 +32,7 @@ const blogDetails = [
 ];
 
 const Blogs: FC = () => (
-  <SectionWrapper id="blogs">
+  <SectionWrapper id="blogs" className="blogs_container">
     <SectionTitle title="Blogs" subtitile="What I write" />
     <Container>
       <Row className="row-gap-3">
