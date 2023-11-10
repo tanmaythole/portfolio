@@ -1,9 +1,11 @@
+
+import Navbar from './components/Navbar';
 import './scss/index.scss';
 
 const App = () => {
   return (
     <>
-      <div className='heading'>App</div>
+      <Navbar />
     </>
   )
 }
