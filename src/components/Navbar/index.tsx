@@ -1,34 +1,21 @@
-import { useCallback, useState } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 import NavItems from './NavItems';
-import './Navbar.scss';
 
-const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const NavBar = () => (
+  <Navbar expand="lg" fixed="top">
+    <Container>
+      <Navbar.Brand href="#home">Tanmay Thole</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav>
+          {NavItems.map(({label, link, key}) => (
+            <Nav.Link key={key} href={link}>{label}</Nav.Link>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+);
 
-  const toggleMobileMenu = useCallback(() => {
-    setIsSidebarOpen(val => !val);
-  }, []);
-
-  return (
-    <nav className="navbar">
-      <div className="logo">Tanmay Thole</div>
-      <div className="nav-items">
-        <div className="hamburger-menu" onClick={toggleMobileMenu}>
-          &#9776;
-        </div>
-
-        <div className={isSidebarOpen ? 'sidebar open' : 'sidebar'}>
-          <span className='close-btn' onClick={toggleMobileMenu}>x</span>
-          <div className="nav-links">
-            {NavItems.map(({key, label, link}) => (
-              <a key={key} href={link}>{label}</a>
-            ))}
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+export default NavBar;
