@@ -1,11 +1,16 @@
-const ThemeSwitch = () => {
-    const changeTheme = () => {
-        document.documentElement.setAttribute("color-scheme", "dark");
-    };
+import useTheme from "../hooks/useTheme";
 
-    return (
-        <button onClick={changeTheme}>Switch theme</button>
-    )
+import LightIcon from "../assets/icons/light.svg";
+import DarkIcon from "../assets/icons/dark.svg";
+
+const ThemeSwitch = () => {
+	const {isDarkTheme, changeTheme} = useTheme();
+
+	const icon = isDarkTheme ? DarkIcon : LightIcon;
+
+	return (
+		<img src={icon} onClick={changeTheme} width={20} />
+	)
 }
 
 export default ThemeSwitch;
