@@ -6,7 +6,8 @@ const useTheme = () => {
   const [theme, setTheme] = useContext(ThemeContext);
 
   const changeTheme = useCallback(() => {
-    const updatedTheme = theme === "dark" ? "light" : "dark"
+    const updatedTheme = theme === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", updatedTheme);
     document.documentElement.setAttribute('data-bs-theme', updatedTheme);
     setTheme?.(updatedTheme)
   }, [theme, setTheme]);

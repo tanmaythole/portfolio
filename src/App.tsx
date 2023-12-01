@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import Navbar from './components/Navbar';
 import Hero from './containers/Hero';
+import About from './containers/About';
 import { ThemeProvider } from './context/themeContext';
 
 import './scss/index.scss';
@@ -18,7 +19,10 @@ const App = () => {
   return (
     <ThemeProvider value={[theme, setTheme]}>
       <Navbar />
-      <Hero />
+      <main>
+        <Hero />
+        <About />
+      </main>
     </ThemeProvider>
   )
 }

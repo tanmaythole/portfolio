@@ -9,10 +9,12 @@
 	font-family: 'Work Sans', sans-serif;
 }
 
-.hero-container {
+main {
 	top: 62px;
 	position: relative;
-	height: calc(100vh - 3.875rem);
+}
+.hero-container {
+	height: calc(100vh - 62px);
 
 	.name-container {
 		font-size: 3.75rem;
@@ -40,6 +42,23 @@
 		.name-container {
 			font-size: 3rem;
 			line-height: 3rem;
+		}
+	}
+}
+
+.about-section {
+	.yoe {
+		font-size: 6rem;
+	}
+
+	@media (max-width: 428px) {
+		.left-section {
+			.yoe {
+				font-size: 4rem;
+			}
+			h5 {
+				font-size: small !important;
+			}
 		}
 	}
 }
