@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './containers/Hero';
 import About from './containers/About';
+import Projects from './containers/projects';
 import { ThemeProvider } from './context/themeContext';
 
 import './scss/index.scss';
@@ -22,6 +23,7 @@ const App = () => {
       <main>
         <Hero />
         <About />
+        <Projects />
       </main>
     </ThemeProvider>
   )
