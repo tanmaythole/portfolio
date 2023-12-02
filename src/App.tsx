@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './containers/Hero';
 import About from './containers/About';
 import Blogs from './containers/blogs';
+import Contact from './containers/contact';
 import Projects from './containers/projects';
 import Testimonials from './containers/testimonials';
 import { ThemeProvider } from './context/themeContext';
@@ -28,6 +29,7 @@ const App = () => {
         <Projects />
         <Blogs />
         <Testimonials />
+        <Contact />
       </main>
     </ThemeProvider>
   )
