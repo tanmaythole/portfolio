@@ -17,14 +17,16 @@ const NavBar = () => (
           ))}
         </Nav>
         <Nav className="ms-auto gap-3">
-          <li>
+          {false && <li>
             <ThemeSwitch />
-          </li>
+          </li>}
           <li>
             <img src={GitHub} alt='Github' width={22} />
           </li>
           <li>
-            <Button variant='outline-primary' size='sm'>Let's Work</Button>
+            <Button as={'a'} href='#contact' variant='outline-primary' size='sm'>
+              Let's Work
+            </Button>
           </li>
         </Nav>
       </Navbar.Collapse>

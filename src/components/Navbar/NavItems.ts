@@ -2,17 +2,17 @@ const NavItems = [
   {
     label: "About",
     key: 'about',
-    link: '',
+    link: '#about',
   },
   {
-    label: "Portfolio",
-    key: 'portfolio',
-    link: '',
+    label: "Projects",
+    key: 'projects',
+    link: '#projects',
   },
   {
     label: "Blogs",
     key: 'blogs',
-    link: '',
+    link: '#blogs',
   },
 ];
 
