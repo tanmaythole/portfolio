@@ -33,7 +33,14 @@ const Hero = () => {
               Passionate software developer dedicated to crafting elegant solutions and enhancing user experiences.
             </span>
             <span className="d-md-block mt-3">
-              <Button variant="primary" className="rounded-pill px-5 py-2">Hire Me!</Button>
+              <Button
+                as='a'
+                href='#contact'
+                variant="primary"
+                className="rounded-pill px-5 py-2"
+              >
+                Hire Me!
+              </Button>
             </span>
           </Stack>
         </Col>

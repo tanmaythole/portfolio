@@ -6,7 +6,7 @@ import ThemeSwitch from '../ThemeSwitch';
 import GitHub from "../../assets/icons/github.svg";
 
 const NavBar = () => (
-  <Navbar expand="lg" fixed="top" className='bg-white border-bottom'>
+  <Navbar expand="lg" fixed="top" className='border-bottom'>
     <Container>
       <Navbar.Brand href="#home">Tanmay Thole</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
