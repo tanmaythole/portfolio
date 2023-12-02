@@ -79,3 +79,20 @@ main {
 		}
 	}
 }
+
+.testimonials-container {
+	.carousel-control-prev,
+	.carousel-control-next {
+		font-size: xx-large;
+		color: var(--bs-secondary);
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 428px) {
+		.testimonial-item {
+			.quote {
+				width: 75% !important;
+			}
+		}
+	}
+}

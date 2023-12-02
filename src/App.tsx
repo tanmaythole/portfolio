@@ -5,6 +5,7 @@ import Hero from './containers/Hero';
 import About from './containers/About';
 import Blogs from './containers/blogs';
 import Projects from './containers/projects';
+import Testimonials from './containers/testimonials';
 import { ThemeProvider } from './context/themeContext';
 
 import './scss/index.scss';
@@ -26,6 +27,7 @@ const App = () => {
         <About />
         <Projects />
         <Blogs />
+        <Testimonials />
       </main>
     </ThemeProvider>
   )

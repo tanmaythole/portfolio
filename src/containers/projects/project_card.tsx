@@ -16,7 +16,7 @@ const ProjectCard = ({ title, tags, image, description, link, github }: TProject
             <Badge key={tag} bg="secondary">{tag}</Badge>
           ))}
         </div>
-        <Card.Text>
+        <Card.Text className="text-secondary">
           {description}
         </Card.Text>
       </Card.Body>
