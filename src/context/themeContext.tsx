@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 
-type ThemeContextType = [string, React.Dispatch<React.SetStateAction<string>>];
+export type ThemeContextType = [string, React.Dispatch<React.SetStateAction<string>>];
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 

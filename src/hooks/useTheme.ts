@@ -3,18 +3,18 @@ import { useCallback, useContext } from "react";
 import { ThemeContext } from "../context/themeContext";
 
 const useTheme = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
 
   const changeTheme = useCallback(() => {
-    const updatedTheme = theme === "dark" ? "light" : "dark";
+    const updatedTheme = theme?.[0] === "dark" ? "light" : "dark";
     localStorage.setItem("theme", updatedTheme);
     document.documentElement.setAttribute('data-bs-theme', updatedTheme);
-    setTheme?.(updatedTheme)
-  }, [theme, setTheme]);
+    theme?.[1]?.(updatedTheme)
+  }, [theme]);
 
   return {
-    theme,
-    isDarkTheme: theme === "dark",
+    theme: theme?.[0],
+    isDarkTheme: theme?.[0] === "dark",
     changeTheme,
   }
 };
