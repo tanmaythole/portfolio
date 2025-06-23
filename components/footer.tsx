@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <Link href="#home" className="text-2xl font-bold gradient-text">
-              John Doe
+              Tanmay Thole
             </Link>
             <p className="mt-4 text-muted-foreground">
               Full Stack Engineer passionate about creating exceptional digital experiences with modern web

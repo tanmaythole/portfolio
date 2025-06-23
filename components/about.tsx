@@ -36,7 +36,7 @@ export default function About() {
               <CardContent className="p-0">
                 <div className="flex justify-center mb-8">
                   <div className="relative w-48 h-48 rounded-full overflow-hidden">
-                    <Image src="/placeholder.svg?height=200&width=200" alt="John Doe" fill className="object-cover" />
+                    <Image src="/tanmay_bitmoji.jpeg?height=200&width=200" alt="Tanmay Thole" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="text-center">

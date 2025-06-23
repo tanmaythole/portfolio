@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   //   type: "website",
   //   locale: "en_US",
   //   url: "https://tanmaythole.vercel.app",
-  //   title: "John Doe - Full Stack Engineer | React Specialist",
+  //   title: "Tanmay Thole - Full Stack Engineer | React Specialist",
   //   description: "Full Stack Engineer specializing in React, Next.js, and modern web technologies.",
   //   siteName: "Tanmay Thole Portfolio",
   //   images: [
